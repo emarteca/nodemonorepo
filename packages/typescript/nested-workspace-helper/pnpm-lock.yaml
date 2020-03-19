@@ -7,7 +7,7 @@ dependencies:
   '@types/semver': 6.2.0
   '@types/yargs': 15.0.0
   chalk: 3.0.0
-  fs-extra: 8.1.0
+  fs-extra: 9.0.0
   fs-tree-utils: 'link:../fs-tree-utils'
   js-yaml: 3.13.1
   monorepo-shared-assets: 'link:../monorepo-shared-assets'
@@ -99,6 +99,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  /at-least-node/1.0.0:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /camelcase/5.3.1:
     dev: false
     engines:
@@ -160,26 +166,27 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
-  /fs-extra/8.1.0:
+  /fs-extra/9.0.0:
     dependencies:
-      graceful-fs: 4.2.2
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      at-least-node: 1.0.0
+      graceful-fs: 4.2.3
+      jsonfile: 6.0.1
+      universalify: 1.0.0
     dev: false
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=10'
     resolution:
-      integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+      integrity: sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
   /get-caller-file/2.0.5:
     dev: false
     engines:
       node: 6.* || 8.* || >= 10.*
     resolution:
       integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
-  /graceful-fs/4.2.2:
+  /graceful-fs/4.2.3:
     dev: false
     resolution:
-      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
+      integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
   /has-flag/4.0.0:
     dev: false
     engines:
@@ -200,12 +207,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
-  /jsonfile/4.0.0:
+  /jsonfile/6.0.1:
+    dependencies:
+      universalify: 1.0.0
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.2
+      graceful-fs: 4.2.3
     resolution:
-      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+      integrity: sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
   /locate-path/5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -310,12 +319,12 @@ packages:
   /tslib/1.10.0:
     resolution:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
-  /universalify/0.1.2:
+  /universalify/1.0.0:
     dev: false
     engines:
-      node: '>= 4.0.0'
+      node: '>= 10.0.0'
     resolution:
-      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /utility-types/3.10.0:
     dev: false
     engines:
@@ -375,7 +384,7 @@ specifiers:
   '@types/semver': ^6.2.0
   '@types/yargs': ^15.0.0
   chalk: ^3.0.0
-  fs-extra: ^8.1.0
+  fs-extra: ^9.0.0
   fs-tree-utils: ^0.1.8
   js-yaml: ^3.13.1
   monorepo-shared-assets: ^0.0.19
