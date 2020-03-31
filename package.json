@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "jest": "^24.9.0",
+    "jest-junit": "^5.0.0",
     "ts-jest": "^24.3.0",
     "babel-jest": "^24.9.0",
     "yaml-jest": "^1.0.5",
@@ -66,6 +67,7 @@
     "clean": "bash 'sh/clean.sh'",
     "fix": "bash 'sh/fix.sh'",
     "test": "bash 'sh/test.sh'",
+    "test:junit": "jest --config=jest.json",
     "build": "bash 'sh/build.sh'",
     "project-build": "bash sh/build.sh",
     "project-publish": "bash sh/publish.sh",

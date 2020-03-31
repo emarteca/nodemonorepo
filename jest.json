@@ -1,0 +1,58 @@
+{
+  "transform": {
+    "\\.jsx?$": "babel-jest",
+    "\\.tsx?$": "ts-jest",
+    "\\.(yaml|yml)$": "yaml-jest"
+  },
+  "testRegex": "\\.(test|spec|check)\\.(jsx?|tsx?)$",
+  "bail": false,
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "json",
+    "ts",
+    "tsx", 
+    "node"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/unit-error-hack.js"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "\/check\/", 
+    "\/test\/",
+    "\/.polyfill\/",
+    ".*.json$",
+    ".*.yaml$",
+    ".*.yml$"
+  ],
+  "testEnvironment": "node", 
+  "reporters": [
+	"default",
+	[
+		"jest-junit",
+		{
+			"outputDirectory": ".",
+			"outputName": "junit-unit-tests.xml"
+		}
+	]
+  ],
+  "moduleNameMapper": {
+    ".*releases.json$": "<rootDir>/static/releases.json"
+  }, 
+  "globals": {
+	  "ts-jest": {
+		"diagnostics": false, 
+		"tsConfig": {
+			"importHelpers": false, 
+			"target": "es2017", 
+          		"module": "commonjs", 
+          		"lib": ["es2017", "es2018", "esnext"],
+          		"esModuleInterop": true, 
+          		"experimentalDecorators": true,
+          		"noEmit": true, 
+          		"strict": false
+		}
+	  }
+  }
+}
