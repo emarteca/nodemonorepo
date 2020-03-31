@@ -1,0 +1,27 @@
+show invalid packages in json format with exit status encountered a declaration exception
+create function create symlinks with fsx.stat as options.stat
+create function throws error when encounter mismatched entities in which a file is requested in place of a folder
+show invalid packages when there is none in lines of text encountered a declaration exception
+create function create clone
+traverse function works with `fs.lstat` as `stat`
+read.nested function works with filter
+ TypeScript: TSLint
+traverse function works with `fs.lstatSync` as `stat`
+show invalid packages in lines of text without exit status encountered a declaration exception
+"traverse function only dig names end with ""B"""
+create function create symlinks with fsx.lstatSync as options.stat
+show invalid packages in lines of text with exit status encountered a declaration exception
+create function creates files/directories that yet to exist
+create function create symlinks with fsx.lstat as options.stat
+"traverse function does not dig names end with ""B"""
+show invalid packages in json format without exit status encountered a declaration exception
+show help encountered a declaration exception
+create function ignores already existed files/directories that is not mismatched
+ TypeScript: Type Check
+traverse function works with provided `deep` and `level`
+show invalid packages when there is none in json format encountered a declaration exception
+create function create symlinks with fsx.statSync as options.stat
+create function throws error when encounter mismatched entities in which a folder is requested in place of a file
+traverse function works with `fs.stat` as `stat`
+traverse function works with `fs.statSync` as `stat`
+traverse function works with default `deep` and `level`
